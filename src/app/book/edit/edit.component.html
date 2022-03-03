@@ -1,0 +1,26 @@
+
+<div class="container">
+
+  <form [formGroup]="formEdit" >
+    <div class="form-group">
+      <label for="id"></label>
+      <input type="number" class="form-control" formControlName="id" id="id">
+    </div>
+    <div class="form-group">
+      <label for="title">Title:</label>
+      <input type="text" class="form-control" formControlName="title" id="title">
+    </div>
+    <div class="form-group">
+      <label for="author">Author</label>
+      <input type="text" class="form-control" formControlName="author"  id="author">
+    </div>
+    <div class="form-group">
+      <label for="description">Description</label>
+      <input type="text" class="form-control" formControlName="description"  id="description">
+    </div>
+
+    <button type="submit"  class="btn btn-primary" (click)="saveEdit()">Submit</button>
+
+    <button type="button" routerLink="/book" class="btn btn-waning">close</button>
+  </form>
+</div>
